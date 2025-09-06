@@ -1,0 +1,118 @@
+/* Fondo de toda la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #666666; /* gris más oscuro */
+    background-image: url('fondo.jpg');
+    background-size: cover; /* cubre toda la pantalla sin deformar */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* mantiene fijo al hacer scroll */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: #ffffff; /* blanco */
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+/* Banner del header */
+header .banner {
+    max-width: 40%; /* ancho máximo */
+    max-height: 100px; /* altura máxima */
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+/* Título Angels Resilience */
+header h1 {
+    color: #000000; /* negro */
+    margin: 10px 0;
+    font-size: 2.5em;
+    font-family: 'Georgia', serif; /* clásica cursiva */
+    font-style: italic; /* cursiva */
+}
+
+
+/* Icono carrito */
+#icono-carrito {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #444444; /* footer gris oscuro */
+    text-align: center;
+    padding: 10px 0;
+    color: #fff;
+}
+
+/* Productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.producto {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto h3 {
+    margin: 10px 0 5px 0;
+    font-size: 1.2em;
+}
+
+.producto p {
+    margin: 5px 0;
+    font-size: 1em;
+}
+
+.producto button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+/* Carrito flotante */
+#carrito-panel {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: none;
+    z-index: 100;
+}
+
+#carrito-panel.mostrar {
+    display: block;
+}
